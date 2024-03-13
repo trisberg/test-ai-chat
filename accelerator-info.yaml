@@ -1,0 +1,28 @@
+id: bb9bac66-c13b-499a-ae5c-912c3ac14489
+timestamp: 2024-03-13T19:14:59.833Z
+source: TAP-GUI
+username: guest
+options:
+  bsGitBranch: main
+  projectName: test-ai-chat
+  artifactId: test-ai-chat
+  groupId: com.springdeveloper
+  packageName: com.springdeveloper.aichat
+  aiService: azureOpenAI
+  openaiModel: gpt-3.5-turbo
+  vectorStoreType: simple
+  liveUpdateIDESupport: true
+  includeBuildToolWrapper: true
+  azureAIEndpoint: https://ai-quickstart.openai.azure.com
+  bsGitRepository: github.com?owner=trisberg&repo=test
+accelerator:
+  name: spring-ai-chat
+  git:
+    url: https://github.com/vmware-tanzu/application-accelerator-samples
+    subPath: spring-ai-chat
+    ref: main
+    commit: e4c85f885cac1dc76b1cd47d72118c9ca9947878
+fragments:
+  - name: build-wrapper-maven
+  - name: live-update
+  - name: tap-workload
